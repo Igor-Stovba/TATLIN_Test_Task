@@ -1,0 +1,8 @@
+{
+    "read_delay_ms": 50,
+    "write_delay_ms": 100,
+    "step_move_ms": 10,
+    "rewind_to_beginning_ms": 300,
+    "max_ram_bytes": 1024,
+    "path_tmp_dir": "/root/Internship/TATLIN_Test_Task/tmp/"
+}

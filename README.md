@@ -2,7 +2,7 @@
 
 Structure:
 
-1) `config.json` file contains different configuration options
+1) `config.json` file contains different configuration options (JSON Format)
     * `read_delay_ms` - the time (in milliseconds) it takes to read element from tape.
     * `write_delay_ms` - the time (in milliseconds) it takes to write element to specific place in tape
     * `step_move_ms` - the time (in milliseconds) it takes to еake a step to the left or right.
@@ -13,6 +13,16 @@ Structure:
 2) `tests` directory contains different tests.
 
 3) `include` and `src` directories which contain headers and source files, respectively.
+
+## Layout
+
+1) `config.hpp` contains info about the mentioned configuration file which allows to adjust the program's behaviour without recompilation.
+
+2) `interfaceTape.hpp` gives an interface `ITape` with needed commands.
+
+3) `fileTape.hpp` provides `FileTape` class which implements interface `ITape`
+
+4) `sorterTape.hpp` provides class `TapeSorter` which performs the sorting procedure itself.
 
 ## Build
 
